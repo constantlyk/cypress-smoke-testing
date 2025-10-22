@@ -18,18 +18,16 @@ Before running your tests, inspect the [Recipe Book app](https://recipebook-reci
 
 Fork this repo and clone it to your machine, then open up a terminal window and `cd` to its directory.
 
-Test the config is loaded correctly by running:
+Install dependencies:
+```sh
+npm i
+```
+
+Test the config is loaded correctly:
 ```sh
 npx cypress open
 ```
-and going to the Settings tab.
-
-## Contents
-
-1. Smoke tests
-   1. `cypress/e2e/login-smoke.js`
-2. CI/CD pipeline
-   1. `.github/workflows/smoke-tests.yml`
+and go to the Settings tab.
 
 ## Usage
 
@@ -38,6 +36,13 @@ To run your smoke tests, use this command:
 ```sh
 npx cypress run --headed
 ```
+
+## Contents
+
+1. Smoke tests
+   1. `cypress/e2e/login-smoke.js`
+2. CI/CD pipeline
+   1. `.github/workflows/smoke-tests.yml`
 
 ## Environments from Shipyard
 
