@@ -62,7 +62,7 @@ describe('Form + button functionality', () => {
 
 
 // Test #4: check a11y attributes
-describe.only('ARIA Attributes', () => {
+describe('ARIA Attributes', () => {
   beforeEach(() => {
     cy.visit('/');
   })
